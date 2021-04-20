@@ -1,0 +1,41 @@
+/*
+  Aquarius - Menu contextuel: actions
+  PiB - V1.1 - 21.11.2019
+*/
+
+.block-local-tasks-block {
+  width: 90%;               /* le bloc ne dépasse pas du contenant */
+  text-align: center;
+
+}
+
+.block-local-tasks-block:before { /* Logo avant le menu */
+  content: "";
+  background: transparent url("../../images/Picto_Edit.png") no-repeat center center;
+  background-size: 2em 2em;
+  width: 2em;
+  height: 3em;
+  float: right;
+}
+
+.block-local-tasks-block > nav {
+  display: none;
+  clear: right;
+}
+
+.block-local-tasks-block:hover > nav {
+  display: block;
+}
+
+.block-local-tasks-block .tabs li {
+  display: block;                   /* affichage en bloc et non en ligne (affichage Classy) */
+}
+
+.block-local-tasks-block .tabs a {   /* reduction du padding défini par classy */
+  padding: 0.2em 0.3em;
+}
+
+.block-local-tasks-block > nav {
+  border: #404040 1px solid;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}

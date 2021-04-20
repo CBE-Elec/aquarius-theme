@@ -1,0 +1,43 @@
+/*
+  Aquarius - Page : Elements de la page
+  CBE - V1.1   - 21.11.2019 --> à voir pour déplacer dans elements.css et/ou layout.css
+  CBE - V1.1.4 - 07.09.2020 - Afficahge correcte des puces de lites
+*/
+
+/*#page header {
+	margin: 0 0 0 0;
+	padding: 0 0;
+}
+*/
+
+.main-region {
+	/*width: 80%;*/
+	margin: 0 auto;
+}
+
+#content {
+	padding: 0em 0.5em;
+}
+
+
+.main-content .frontpage li, .main-content .news li, .main-content .node li, .cke_editable ul li, .main-content .view-content li {
+  list-style-type: none;
+  margin: 0.25em 0 0 0;
+  padding-left: 1.2em;
+  background-image: url("../../images/puce.png");
+  background-position: 0 0.25em;
+  background-size: 0.5em;
+  background-repeat: no-repeat;
+}
+
+.main-content .node li.node-readmore, li.dropbutton-action, li.dropbutton-toggle {  /* Suppression des puces pour certaines listes */
+background-image: none !important;
+margin: 0 !important;
+padding: 0 !important;
+}
+
+
+.tabledrag-toggle-weight /* Pour toutes les pages, masquer le lien "afficher les poids des lignes" */
+{
+    display: none;    
+}

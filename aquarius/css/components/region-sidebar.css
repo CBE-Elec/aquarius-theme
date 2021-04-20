@@ -1,0 +1,52 @@
+/*
+  Aquarius - Region Sidebar : bandes latérales
+  CBE - V1.0 - 18.11.2017
+  CBE - V1.1 - 21.11.2019
+*/
+
+/* Affichage faible largeur */
+.sidebar {
+  display: none;
+  width: 10%;
+  padding: 1em 0 0 0;
+  overflow: hidden;
+  font-size: 0.8em;
+}
+
+/* Affichage sur écran intermédiaire */
+@media all and (min-width: 601px) { 
+  #sidebar-right {
+    display: block;
+  }
+}
+
+/* Affichage sur écran large */
+@media all and (min-width: 768px) { /* !! Brakpoint commun avec paramètre de Superfish */
+.sidebar {
+  display: block;
+  }
+}
+
+#sidebar-left {
+    float: left;
+}
+
+#sidebar-right {
+    float: right;
+  }
+
+.sidebar .section {
+  padding: 10px 15px 0;
+}
+
+.sidebar h2 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.sidebar ul, .sidebar ol, .sidebar li {
+    text-decoration: none;
+    padding: 0 0;
+    margin: 0 0;
+    
+}

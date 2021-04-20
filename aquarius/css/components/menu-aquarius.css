@@ -1,0 +1,98 @@
+/*
+  Aquarius - menu-aquarius
+  ajoutée depuis la configuration du bloc "menu principal",
+  le menu peut être placé sous le <header> ou dans la zone .region-primary-menu
+  basé sur un menu de type Superfish
+
+  CBE - V1.0 - 03.08.2019
+  PiB - V1.1.0 - 30.10.2019
+  CBE - V1.1.1 - 02.12.2019
+*/
+
+
+/* Espacement entre les liens du menu */
+ul.menu-aquarius a { 
+  line-height: inherit;
+  margin: 0;
+  padding: 0.8em 0.5em;
+}
+
+
+/* Menu initial, pour largeur normale, et caractéristiques communes */
+.menu-aquarius {
+  /*display: block;*/
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  max-width: 40em;
+  align-items: center;
+  font-size: 1em;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+.menu-aquarius > li:first-child a {   /* Pictogramme "maison" pour le 1er lien vers Accueil */
+  display : inline-block;
+  overflow : hidden;
+  text-align : left;
+  text-indent : -9999px;
+  white-space : nowrap;
+  width: 2em;     /* CBE - à revoir car devrait être de la taille du background */
+  height: 3em;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url("../../images/Picto_Accueil.png");
+  background-size: 4em;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-position-y: -0.9em;
+}
+
+.menu-aquarius > li:first-child a:hover, .menu-aquarius > li:first-child a.is-active  {   /* Changement couleur du picto */
+  background-image: url("../../images/Picto_Accueil_hover.png");
+}
+
+ul.menu-aquarius li.sfHover>ul {   /* Positionnement des sous menu d'un menu ouvert */
+  top: 3.8em; /* Positionnement du menu ouvert juste sous la bordure de l'en-tête */
+  left: 2em;
+}
+
+/* Lorsque la page passe en dessous de la taille définie dans la configuration, Superfish crée (via jQuery) un menu "#superfish-main-accordion", class "menu-aquarius", est créé.
+Un bouton "#sf-accordion-toggle" est également créé (sans class) pour le lien d'affichage / masquage du menu.
+Le menu initial est masqué par Superfish.
+*/
+
+/* Menu de navigation, en affichage faible largeur */
+.menu-aquarius.sf-accordion {
+  position: absolute !important;  /* placement du menu sous le picto burgger (placement relatif passe sur le picto, imposé par Superfish) */
+  width: 90% !important;          /* forcer à couvrir la largeur de l'écran (imposition par Superfish sinon) */
+  background-color: #ffffff;      /* Fond blanc pour effet masquer le contenu de la page, en-dessous */
+  border: #404040 1px solid;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+/* Alignement des lignes et sous-lignes */
+.menu-aquarius.sf-accordion li a {
+  padding-left: 1em;
+}
+.menu-aquarius.sf-accordion li li a {
+  padding-left: 2em;
+}
+
+/* Bouton d'affichage / masquage du menu, en affichage faible largeur */
+/* CBE - identification par #id à revoir, mais class menu-aquarius non ajoutée dans le HTML.*/
+#block-menuprincipal-2 #superfish-main-toggle:before { /* Logo du menu */
+  content: "";
+  background: transparent url("../../images/Picto_Burger_Menu.png") no-repeat center center;
+  background-size: 2em 2em;
+  width: 2em;
+  height: 3em;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+/* Masque le titre du menu réduit (nom modifiable dans Superfish, à définir sur " ") */
+#block-menuprincipal-2 #superfish-main-toggle span {  
+  display: none;
+}

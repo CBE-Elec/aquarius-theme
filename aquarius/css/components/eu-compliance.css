@@ -1,0 +1,28 @@
+/*
+  Aquarius - eu-compliance
+  Personnalisation de l'apparence du menu de validation des cookies
+  CBE - V1.1.6 - 23.03.2021 - Création
+*/
+
+@media screen and (max-width: 600px) {
+	.eu-cookie-compliance-buttons.eu-cookie-compliance-has-categories {
+		float: right;
+		margin-top: -10px;
+	}
+}
+
+.eu-cookie-withdraw-tab {
+	display: none;
+}
+
+.region-footer .menu-item .eu-cookie-withdraw-tab {
+	display: inline-block;
+	position: unset;
+	top: unset;
+	transform: unset;
+	right: unset;
+	left: unset;
+	width: unset;
+	height: unset;
+	border-style: none;
+}

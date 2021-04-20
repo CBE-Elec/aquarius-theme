@@ -1,0 +1,47 @@
+/*
+  Aquarius - Slideshow : diaporamma sur page d'accueil
+  CBE - V1.0 - 	 08.12.2018
+  CBE - V1.1 - 	 24.1.2019
+  CBE - V1.1.2 - 16.02.2020
+*/
+
+.region-slideshow {
+  display: none;		/* Bloc masqué sur petit écran */
+  width: 100%;
+  margin: 0 0 ;
+  padding: 0 0;
+}
+
+.region-slideshow .block .content {
+	margin: 0 0;
+}
+
+/* Affichage faible largeur */
+.region-slideshow .views-slideshow-controls-bottom {
+	display: none;
+}
+
+/* Affichage sur écran large */
+@media all and (min-width: 768px) { /* !! Brakpoint commun avec paramètre de Superfish */
+	.region-slideshow
+	{
+		display: block;
+	}
+	/* positionnement des bulles de pagination dans l'image et suppression de l'espace vide */
+	.region-slideshow .views-slideshow-controls-bottom {
+		display: block;
+		position: relative;
+		bottom: 35px;
+		z-index: 10;
+		margin: -3.5px 0;
+		height: 0;
+	}
+}
+
+.views-slideshow-controls-bottom .views-slideshow-pager-bullets li {
+	background: #00b2ff;
+}
+
+.views-slideshow-controls-bottom .views-slideshow-pager-bullets li.active {
+	background: #FFFFFE;	
+}

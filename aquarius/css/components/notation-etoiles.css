@@ -1,0 +1,16 @@
+/*
+  Aquarius - Notation par système d'étoiles (tentative)
+  CBE - V1.0 - 16.06.2019
+*/
+
+select#edit-field-note option[value="5"]--container   {
+    background:url("../../images/etoiles_5_low.png") 0px 0px ;
+    padding-left: 60px; /* un peu plus large que l'image */
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: left;
+;}
+select#edit-field-note option[value="4"]   { background-image:url("../../images/etoiles_4.png");}
+select#edit-field-note option[value="3"]   { background-image:url("../../images/etoiles_3.png");}
+select#edit-field-note option[value="2"]   { background-image:url("../../images/etoiles_2.png");}
+select#edit-field-note option[value="1"]   { background-image:url("../../images/etoiles_1.png");}

@@ -1,0 +1,41 @@
+{#
+/**
+  Aquarius - Architecture de la page.
+  CBE - V1.0 - 09.08.2019
+  PiB - V1.1 - 21.11.2019
+**/
+#}
+
+<div id="page">
+  <header role="banner" aria-label="{{ 'Site header'|t }}" data-offset-top="103px">
+    {{ page.header }}    
+  </header>
+  
+  <main>
+    {% if page.slideshow %}
+      {{ page.slideshow }}
+    {% endif %}
+    <div class="main-region">
+    <div id="sidebar-left" class="column sidebar" role="complementary">
+      {{ page.sidebar_left }}
+    </div>
+    <div id="sidebar-right" class="column sidebar" role="complementary">
+      {{ page.sidebar_right }}
+    </div>
+    <div id="content" class="column main-content" role="main">
+      {% if page.breadcrumb %}    
+        <div id="breadcrumb">
+          {{ page.breadcrumb }}
+        </div>
+      {% endif %}
+      <section class="section">
+        <a id="main-content" tabindex="-1"></a>
+        {{ page.content }}
+      </section>
+    </div>
+  </main>
+
+    <footer class="site-footer">
+      {{ page.footer }}
+    </footer>
+</div>

@@ -1,0 +1,113 @@
+/**
+  Aquarius - Elements de base.
+  CBE - V1.0    09-12-2018
+  CBE - V1.1    21-11-2019
+  CBE - V1.1.2  16-02-2020
+**/
+
+html {
+  height: 100%;
+}
+
+body {
+  word-wrap: break-word;
+}
+
+nav {
+  display: block;
+}
+
+a,
+a.link {
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus,
+.link:hover,
+.link:active,
+.link:focus {
+  text-decoration: none;
+}
+
+h1 a,
+h2 a {
+  border-bottom: none;
+}
+
+h1 {
+  margin: 1em 0 0.5em;
+  font-weight: inherit;
+  font-size: 1.3em;
+}
+h2 {
+  margin: 1em 0 0.5em;
+  font-weight: inherit;
+  font-size: 1.15em;
+}
+
+h3 {
+  margin: 1em 0 0.25em;
+  font-weight: inherit;
+  font-size: 1.075em;
+}
+
+h4 {
+  margin: 0.5em 0 0.25em;
+  font-weight: inherit;
+  font-size: 1.05em;
+  font-style: italic;
+}
+h5 {
+  margin: 0.5em 0 0;
+  font-weight: inherit;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+h6 {
+  margin: 0.5em 0 0;
+  font-weight: inherit;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  padding: 0 0 0.25em 0em; 
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 90%;    /* Les champs de saisie ne dépassent pas du contenant */
+}
+
+/* Style pour les citations */
+blockquote {
+  border-left: 1px solid #bbb;
+  font-style: italic;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+blockquote:before {
+  content: "\201C";
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.2em;
+  vertical-align: -0.4em;
+}
+blockquote:after {
+  content: "\201D";
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -0.45em;
+}
+blockquote > p:first-child {
+  display: inline;
+}

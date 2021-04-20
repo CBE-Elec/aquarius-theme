@@ -1,0 +1,9 @@
+/*
+  Aquarius - Page des référents
+  CBE - V1.1 - 21.11.2019
+*/
+
+.referents .views-view-grid .views-row {
+  display: flex;
+  flex-wrap: wrap;
+}

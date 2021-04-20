@@ -1,0 +1,46 @@
+/*
+  Aquarius - Info membre
+  Entites produites par la vue Info_membre: representation d'un User dans differents formats
+  CBE - V1.0    - 04.09.2019
+  CBE - V1.1.0  - 21.11.2019
+  CBE - V1.1.1  - 14.12.2019
+*/
+
+.info_membre {
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: wrap;*/
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.info_membre_photo {
+	margin: 10px;
+	padding: 0;
+	clear: left;
+}
+
+/*.info_membre_photo img:hover, img.image-style-profil-membre:hover {
+  max-width: 150%;
+  width: 120px;
+  position: relative;
+}*/
+
+.info_membre_info {
+  overflow: hidden;
+}
+
+.info_membre_info a {
+  font-size: 0.8em;
+}
+
+.info_membre_info:hover ~ .info_membre_hover, .info_membre_info:focus ~ .info_membre_hover, .info_membre_hover:hover {
+	/* au survol ou au focus sur .info_membre_info, action sur .info_membre_hover (element qui se trouve juste apres, au meme niveau hierarchique) */
+	display: block;
+}
+
+.info_membre_hover {
+	display: none;
+	position: absolute;
+	/*background-color: white;*/
+}

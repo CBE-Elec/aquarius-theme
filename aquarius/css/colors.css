@@ -1,0 +1,81 @@
+/*
+  Aquarius - Couleurs
+  CBE - V1.1.0 - 21.11.2019
+  CBE - V1.1.1 - 26.11.2019
+*/
+
+
+/* Contenu principal */
+.main, body{
+  color: #000000;
+  background-color: #FFFFFE;
+}
+
+.main-region, .region-header {
+	background-color: #FFFFFE;
+}
+
+a,
+.link {
+  color: #00b2ff;
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+  color: #004FEE;
+}
+a:active,
+.link:active {
+  color: #004FEE;
+}
+
+
+/* Titres */
+h1 {
+  color: #E65C00;
+}
+h2, table caption {
+  color: #00B2FF;
+}
+h3, .profile > .field--type-entity-reference > .field__label {
+  color: #E68A00; /*#e67300/*#d6a000*/
+}
+h4 {
+  color: #004FEE;
+}
+
+
+/* Menu principal */
+.menu-aquarius ul, .menu-aquarius a {
+  /* couleur de fond à définir pour ul sinon des lignes apparaissent entre les liens */
+  background-color: #FFFFFE;
+  color: #00b2ff;
+ }
+
+
+/* changement de couleur au passage de la souris, pour la page active et le menu actif */
+.menu-aquarius a:hover, .menu-aquarius a:active, .menu-aquarius a.is-active,
+.menu-aquarius .active-trail>a, ul.menu a.is-active {
+  color: #004FEE;
+}
+
+
+/* Menu secondaire */
+.region-secondary-menu .menu-item a,
+.region-secondary-menu .menu-item a.is-active {
+  color: #00B2FF; /* text header */
+}
+
+/* Pied de Page */
+.site-footer {
+  color: #FFFFFE;
+  background-color: #404040;
+}
+.site-footer a { 
+	color: #FFFFFE;
+ }
+.site-footer a:hover { 
+  color: #004FEE;
+ }

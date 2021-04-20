@@ -1,0 +1,26 @@
+/*
+  Aquarius - Affichage du forum
+  CBE - V1.1.1  - 28.12.2019
+  CBE - V1.1.4  - 07.09.2020 - afficahge correcte des puces de listes
+*/
+
+.forum .auteur {
+  font-size: 0.8em;
+  margin: 0.3em 0em 0.3em 0.3em;
+}
+
+@media all and (min-width: 768px) { 
+  .forum .auteur {  /* positionnement flotant uniquement si l'écran est assez large (sinon souci avec post d'une seule ligne) */
+    float: right;
+  }
+}
+
+.forum .views-field-edit-node, .forum .views-field-delete-node {
+  font-size: 0.8em;
+  float: right;
+  margin: 0.3em 0em 0.3em 0.3em;
+}
+
+.forum .views-field-operations li {
+  border-bottom: none;
+}

@@ -1,0 +1,23 @@
+/*
+  Aquarius - Page "bureau"
+  CBE - V1.0 - 08.12.2018
+  PiB - V1.1.0 - 24.11.2019
+  CBE - V1.1.1 - 18.12.2019
+*/
+
+.view-bureau .view-grid {
+  display: grid;
+  grid-template-columns:repeat(auto-fill, 16em); /* adaptation automatique du nombre de colonnes */
+  grid-gap: 0.5em;
+  justify-content: start;   /* Grille sérrée à gauche */
+}
+
+.view-bureau li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;   /* Titre et date de mandat collés aux bords haut et bas */
+}
+
+.view-bureau h3 {
+  margin-top: 0.5em;  /* Réduction de la marge haute par rapport aux H3 classiques */
+} 

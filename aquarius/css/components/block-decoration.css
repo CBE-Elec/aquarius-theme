@@ -1,0 +1,125 @@
+/*
+  Aquarius - Habillage des blocs sous forme de boites
+  CBE - V1.0    - 04.09.2019
+  CBE - V1.1.0  - 21.11.2019
+  CBE - V1.1.1  - 14.12.2019
+  CBE - V1.1.2  - 22.01.2020
+  CBE - V1.1.4  - 17.09.2020 - ajout de fond rouge pour mettre en avant un bloc
+  CBE - V1.1.5  - 27.19.2020 - ajout .dropbutton-widget --> display: inline-block pour affichage correcte du bouton d'actions dans la fiche user.
+*/
+
+.square-block {
+    display: block;
+    overflow: hidden;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 2px #DDD;
+    padding: 0.116em 1.1600928074246%;
+    margin: 10px 0.011342819711552em;
+    flex-basis: auto;
+    flex-grow: 1;
+    -webkit-flex-basis: auto;
+    -webkit-flex-grow: 1;
+}
+
+.red-block {
+	display: block;
+    overflow: hidden;
+    border: none;
+	background-color: red;
+	color: white;
+	padding: 0.5em;
+}
+
+li.square-block {   /* Supprime les puces pour les listes au format square-block */
+	background: none !important;
+}
+
+.scrolling { /* Autorise un scroll en cas de dépassement du contenu */
+  overflow: auto;
+}
+
+.tag, .tag_ok, .tag_warning, .tag_error {  
+    display: inline-block;
+    padding: 0.2em 0.4em;
+    margin: 0.1em 0;
+    text-align: center;
+    color: #000000;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tag { background-color: #00b2ff;}
+.tag_ok { background-color: lightgreen; }
+.tag_warning { background-color: orange;}
+.tag_error {background-color: red;}
+
+.tag_efface {  /* Le tag disparait au bout d'un certain temps */
+  animation:efface 1s 1;
+  -webkit-animation:efface 1s 1; 
+  animation-fill-mode: forwards;
+  animation-delay:5s;
+  -webkit-animation-delay:5s; /* Safari et Chrome */
+  -webkit-animation-fill-mode: forwards;
+} 
+@-webkit-keyframes efface {
+  from {opacity: 1; height: 1em;}
+  to {opacity: 0; height: 0; -webkit-transform: translateY(-1em);}
+}
+
+
+.button a, .button a:hover, .button a:focus, .button a:visited, .button a:active,
+.more-link a, .more-link a:hover, .more-link a:focus, .more-link a:visited, .more-link a:active  {
+    color: black;
+}
+
+.dropbutton-widget {
+  display: inline-block !important;
+}
+
+.button, .button:first-child, .more-link {    /* attention ID à changer selon le nom du bloc ! */
+    display: inline-block;
+    padding: 0.3em 0.7em;
+    margin: 0.2em 1em 1em 1em;
+    text-align: center;
+    color: black;
+    font-size: 0.9em;
+    text-decoration: none;
+    border: 1px solid #a6a6a6;
+    border-radius: 20em;
+    background-color: #f2f1eb;
+    background-image: -webkit-linear-gradient(top, #f6f6f3, #e7e7df);
+    background-image: linear-gradient(to bottom, #f6f6f3, #e7e7df);
+    text-decoration: none;
+    text-shadow: 0 1px hsla(0, 0%, 100%, 0.6);
+    font-weight: 600;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-font-smoothing: antialiased;
+    width: auto !important;
+}
+
+
+.text-to-copy .view-content {
+    padding: 0.5em;
+    border-style: solid;
+    border-color: rgb(63, 63, 63);
+    border-radius: 4px;
+    background-color: rgb(63, 63, 63);
+    color: rgb(239, 239, 143);
+    font: normal 10pt Consolas, Monaco, monospace;
+    line-height: 1.5em;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.text-to-copy .view-content h3 {
+    padding: 0;
+    margin: 0;
+    line-height: 3em
+}
+
+.origine {
+	float: right;
+	font-size: 0.8em;
+}

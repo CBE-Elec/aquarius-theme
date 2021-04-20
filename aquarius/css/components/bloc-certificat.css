@@ -1,0 +1,12 @@
+/*
+  Aquarius - bloc certificat
+  Bloc affichant un message d'alerte sur le certificat médical
+  CBE - V1.1.2  - 21.01.2020
+*/
+
+.bloc-certificat {
+	float: none;			/* pas de positionnement flottant sinon les blocs autour ne s'écoulent pas dessous (overflow none) */
+	text-align: right;		/* Positionnement du bloc à droite */
+	margin: 0 0 -2.5em 0;	/* Positionnement du bloc au niveau du haut du contenu (pas de ligne suplémentaire pour le bloc) */
+	min-height: 2em;		/* Hauteur du bloc fixe pour éviter les décalages du reste du contenu lors de la dispoarition du bloc (annimation tag_efface) */
+}

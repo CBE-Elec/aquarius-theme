@@ -1,0 +1,152 @@
+/*
+  Aquarius - Région header (En-tête du site (logo, menus))
+  CBE - V1.0 - 09.12.2018
+  PiB - V1.1.0 - 21.11.2019
+  CBE - V1.1.1 - 02.12.2019
+*/
+
+/* ------------------ .region-header ------------------ */
+/* Attention la balise <header> est aussi utilisée pour les articles / nodes */
+
+.region-header {
+  padding: 0.3em 0.5em 0.5em 0.5em;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0; /* Pour que la zone couvre toute la largeur de la page */
+  overflow: visible; /* Pour que les sous-menus puissent déborder de l'en-tête */ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  /*height: 82px;*/
+  height: 4.7em;
+  background-color: #FFFFFE;
+  border-bottom-style: solid;
+  border-bottom-color: #004FEE;
+  border-bottom-width: 4px;
+}
+
+/* Affichage par défaut sur écran réduit */
+.region-header .block-system-branding-block { /* Partie relative au logo */
+  order: 1;
+}
+.region-header .block-superfishmain { /* Partie relative au menu de navigation */
+  width: 10%;
+  order: 0;
+}
+.region-header #block-info-membre-connecte { /* Partie relative au menu utilisateur */
+  width: 10%;
+  order: 3;
+}
+
+.region-header .block-views-blockbloc-utilisateur-block-2 { /* Partie relative aux messages personnels: certificat médical */
+  order: 2;
+}
+
+/* Affichage sur écran large */
+@media all and (min-width: 768px) { /* !! Brakpoint commun avec paramètre de Superfish */
+  .region-header {
+    padding: 0.3em 10% 0.5em 10%;	/* ne dépasse pas de la zone de contenu principale */
+    align-items: center;
+  }
+
+  .region-header .block-system-branding-block { /* Partie relative au logo */
+    width: 20%;
+    order: 0;
+    text-align: left;
+    position: relative;
+  }
+  .region-header .block-superfishmain { /* Partie relative au menu de navigation */
+    width: 100%;
+    order: 1;
+    flex: 1;
+  }
+  .region-header #block-info-membre-connecte { /* Partie relative au menu utilisateur */
+    width: 10%;
+    order: 3;
+  }
+  
+  .region-header .block-views-blockbloc-utilisateur-block-2 { /* Partie relative aux messages personnels: certificat médical */
+    order: 2;
+  }
+
+  /* Ajustement de l'alignement logo -- menu -- user block */
+  .region-header .block:not(.site-branding) {
+    margin: 1.2em 0 0 0; /* alignement centré du menu avec le logo */
+  }
+
+  /* Menu fixe en haut de page (ne bouge pas avec le scroll) */
+  .region-header {
+    position: fixed; /* Menu fixe en haut de la page */
+    z-index: 50;   /* Le menu passe au-dessus de tout */
+  }
+
+  #page > header {  /* Décalage du contenu après le header pour éviter la superposition */
+    margin-bottom: 5.7em;
+  }
+  .toolbar-horizontal .region-header, .toolbar-horizontal #page > header {   /* Si on a la barre d'admin, on place le menu en relatif. */
+  position: relative;
+  margin-bottom: 0em;
+}
+}
+ 
+/* Limitation de la taille du logo */
+.site-branding img {
+ /*max-height: 90px; */
+ max-height: 4.7em; 
+}
+
+ 
+  /* menu toujours en haut de la page même si scroll */
+/*  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  height: 100px;*/
+}
+/* il faut un padding à l'élément parent pour que le contenu ne parte pas sous le menu */
+/*#page header {
+  padding-top: 100px;
+}*/
+
+
+
+/**
+  Menu utilisateur, placé dans le header.
+  Réduction sous forme d'icone --> to do
+**/
+
+/*.region-header .info-membre {
+  margin: 0 0;
+  float: right;
+  position: relative;
+  right: 40px;
+  white-space: nowrap;
+}
+*/
+/* .region-header .info-membre:before {  /* logo avant le menu 
+  content: "";
+  display: block;
+  background: transparent url("../../images/Picto_Connexion.png") no-repeat center center;
+  background-size: 2em 2em;
+  width: 2em;
+  height: 2em;
+  float: left;
+  left: -1em;
+  top: -4px;
+  position: relative;
+}
+*/
+
+.region-header .bloc-certificat {
+  margin: 10px 0;
+  float: right;
+  position: relative;
+  right: 40px;
+  white-space: nowrap; 
+}
+

@@ -1,0 +1,94 @@
+/*
+  Aquarius - Tables et tableaux
+  CBE - V1.0 - 21.11.2019
+  PiB - V1.1.0 - 24.11.2019
+  CBE - V1.1.1 - 18.12.2019
+  CBE - V1.1.3 - 16.06.2020 - Ajout position forcée du header sticky sur vue mobile.
+  CBE - V1.1.4 - 15.09.2020 - Add listing table format
+*/
+
+table {
+  width: 100%;
+  border: none;
+  border-spacing: 0;
+  margin: 1em 0;
+  font-size: 0.857em;
+  color: #000000;
+}
+
+/* 1ère lignes (header) */
+th {
+  border-bottom: 1px solid;
+  border-bottom-color: #000000;
+  padding: 0.2em;
+  vertical-align: bottom;
+  text-align: left;
+  vertical-align: center;
+}
+
+th a, th a:hover, th a:focus {  /* liens pour le tri dans les êntetes */
+  text-decoration: underline;
+  color: #000000;
+}
+
+th a:hover, th a:focus {
+  font-weight: bold;
+}
+
+/* Lignes suivantes */
+td {
+  border-bottom: 1px solid;
+  border-bottom-color: #505050;
+  padding: 0.2em;
+  text-align: left;
+  vertical-align: center;
+}
+
+tbody tr:hover {
+  background-color: #eeeeee;
+}
+
+
+/* Autres éléments */
+
+td.is-active {    /* Colonne de tri */
+background-color: unset;  /* Annulation du paramètres de Classy */
+}
+
+
+/* Responsive tables. */
+@media screen and (max-width: 37.5em) { /* 600px */ /* CBE valeurs à revoir ! */
+  th.priority-low,
+  td.priority-low,
+  th.priority-medium,
+  td.priority-medium {
+    display: none;        /* Masquage des colonnes si l'écran est trop petit. */
+  }
+
+  table.sticky-header { /*forçage de la position de header sticky quand on n'a pas de menu sticky pour le site */
+    top: 0!important;
+  }
+}
+
+@media screen and (max-width: 60em) { /* 920px */
+  th.priority-low,
+  td.priority-low {
+    display: none;
+  }
+}
+
+/* Lien de permutation affichage / masquage des colonnes */
+.tableresponsive-toggle-columns .link {
+  font-size: 0.8em;
+}
+
+
+table.sticky-header {   /* Header sticky reste sous les menus */
+    z-index: 40!important;
+}
+
+.listing-title {
+  display: inline-block;
+  font-size: 1.7em;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,29 @@
+/*
+  Aquarius - Formatage pour impression papier
+  CBE - V1.1.4 - 15.09.2020 - Création
+*/
+
+body, input, textarea, select, a {
+  color: #000;
+  background: none;
+}
+
+body {
+  /*width: 640px;*/
+}
+
+#block-menuprincipal-2, #block-info-membre-connecte { /* Retire les menus */
+  display: none;
+}
+
+#sidebar-left, #sidebar-right, #toolbar, .site-footer, .tabs, .shortcut-action {
+  display: none;  /* Retire les colonnes et le pied de page */
+}
+
+.region-header {
+  border: none; /*Supprime la bordure de couleur en haut de la page.*/
+}
+
+.main-content {
+  width: 100%;
+}

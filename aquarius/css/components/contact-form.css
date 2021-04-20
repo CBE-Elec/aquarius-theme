@@ -1,0 +1,9 @@
+/*
+  Aquarius - Formulaire de contact
+  CBE - V1.1.2  - 16.02.2020
+*/
+
+/* Dissimule le bouton d'aperçu du formulaire de contact */
+#contact-message-formulaire-contact-general-form  #edit-preview {
+  display: none;
+}

@@ -1,0 +1,12 @@
+/**
+  Aquarius - Polices de caractère.
+  CBE - V1.0 09-12-2018
+  CBE - V1.1 21-11-2019
+**/
+
+body {
+	font-family: "Roboto", sans-serif;
+	/*font-family: "Arial", sans-serif;*/
+	font-size: 1.125em;
+	font-display: swap;
+}

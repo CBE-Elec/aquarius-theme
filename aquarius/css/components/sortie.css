@@ -1,0 +1,53 @@
+/*  Aquarius - Sorties
+  CBE - V1.0    - 04.09.2019
+  CBE - V1.1.1  - 14.12.2019
+  CBE - V1.1.3  - 15.06.2020 - Affichage de Google Map pour les prestataires
+*/
+
+.view-sortie .nom-sortie {
+	display: inline;
+	color: #00b2ff;
+	font-size: 1.6em;
+	margin: 0 1em 0 0;
+}
+
+.view-sortie .views-field-operations {  /* placement du bouton d'action dans le flux */
+	display: inline-block;
+	margin: 0.2em 0em 0.4em 0.5em;
+}
+
+.sortie-vip > div {	/* Organisation des utilisateurs dans les blocs Organisateurs et Directeur de plong  */
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.view-sortie .pager__item.is-active {    /* Supression de "Page n" dans le navigateur entre les sorties, en bas de page */ 
+  display: none;
+}
+
+.views-field {
+  margin-block-start: 0.5em;
+}
+
+.views-field p {
+  margin-block-start: 0.0em;
+  margin-block-end: 0.5em;
+}
+
+/* Afficahge de la carte Google map à côté des coordonnées du prestataire sur la vue Sortie */
+.view-sortie .views-field-field-club-plongee article .node__content, .view-sortie .views-field-field-hebergement article .node__content, .view-sortie .views-field-field-restauration article .node__content {
+	display: grid;
+	grid-template-columns: 25% auto;
+}
+
+.view-sortie article div:not(.field--name-field-carte) {
+	grid-column: 1;
+	align-self: flex-start;
+}
+
+.view-sortie article .field--name-field-carte {
+	grid-column: 2;
+	grid-row-start: 1;
+	grid-row-end: 5;
+}

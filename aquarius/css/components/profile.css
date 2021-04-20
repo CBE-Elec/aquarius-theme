@@ -1,0 +1,62 @@
+/*
+  Aquarius - Profile : Vue de user et ses profils;
+  CBE - V1.0 - 01.05.2019
+  PiB - V1.1 - 21.11.2019
+*/
+
+.profile ul {
+    text-decoration: none;
+}
+
+.profile li{
+    display: inline-block;
+    margin: 0px 20px;		/* CBE --> à revoir */
+}
+
+/*.profile .field--type-image {
+	top: 0%;
+}
+
+.field--type-entity-reference {
+	font-size: inherit;
+	font-family: inherit;
+	clear: left;
+}
+
+.field--type-entity-reference .field__label{
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: bold;
+}
+*/
+
+.group-profiles {
+    display: inline-block;
+}
+
+.field--label-above > .field__label { /* Idem h3 */
+  margin: 0.5em 0 0.25em;
+  font-weight: inherit;
+  font-size: 1.075em;
+}
+.field--label-above .field--label-above > .field__label { /* Mais pas aux sous-niveaux */
+  margin: inherit;
+  font-weight: bold;
+  font-size: inherit;
+}
+.field--label-above > .field__label::after {
+  content: ":";
+}
+.field--label-above > .field__items > .field__item::before {
+  content: "";
+  padding-left: 1.2em;
+  background-image: url("../../images/puce.png");
+  background-position: 0 0.25em;
+  background-size: 0.5em;
+  background-repeat: no-repeat;
+}
+
+article .profile, .field--label-above > .field__item {
+  display: flex;
+  flex-direction: column;
+}
