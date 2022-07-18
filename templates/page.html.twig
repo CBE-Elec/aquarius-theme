@@ -16,12 +16,16 @@
       {{ page.slideshow }}
     {% endif %}
     <div class="main-region">
-    <div id="sidebar-left" class="column sidebar" role="complementary">
-      {{ page.sidebar_left }}
-    </div>
-    <div id="sidebar-right" class="column sidebar" role="complementary">
-      {{ page.sidebar_right }}
-    </div>
+    {% if page.sidebar_left %}
+      <div id="sidebar-left" class="column sidebar" role="complementary">
+        {{ page.sidebar_left }}
+      </div>
+    {% endif %}
+    {% if page.sidebar_right %}
+      <div id="sidebar-right" class="column sidebar" role="complementary">
+        {{ page.sidebar_right }}
+      </div>
+    {% endif %}
     <div id="content" class="column main-content" role="main">
       {% if page.breadcrumb %}    
         <div id="breadcrumb">

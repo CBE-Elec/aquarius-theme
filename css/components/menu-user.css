@@ -16,7 +16,7 @@
   margin-left: 15%;
 }
 
-#block-info-membre-connecte .content {
+#block-info-membre-connecte > div {
   display: none;
   position: absolute!important;  /* CBE revoir le positionnement */
   top: 80px;
@@ -37,7 +37,7 @@
 
 /* Affichage sur écran large */
 @media all and (min-width: 768px) { /* !! Brakpoint commun avec paramètre de Superfish */
-  #block-info-membre-connecte .content {
+  #block-info-membre-connecte > div {
     right: unset;
   }
 }
