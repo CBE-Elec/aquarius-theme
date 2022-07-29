@@ -1,0 +1,18 @@
+/*
+  Aquarius - Formatage pour impression PDF
+  CBE - V0.0.1 - 29.07.2022 - Création
+*/
+
+body, input, textarea, select, a {
+  color: #000;
+  background: none;
+}
+
+body {
+  /*width: 640px;*/
+}
+
+.page {
+  background: transparent url("../../images/logo.png") no-repeat center center;
+
+}
