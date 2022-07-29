@@ -33,6 +33,11 @@ global-styling:
       css/colors.css: {}
       css/fonts.css: {}
       css/print.css: { media: print }
+
+print-styling:
+  version: VERSION
+  css:
+    theme:
       css/print-pdf.css: {}
 
 fonts:
