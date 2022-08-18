@@ -26,6 +26,7 @@ global-styling:
       css/components/vue-bureau.css: {}
       css/components/forum.css: {}
       css/components/contact-form.css: {}
+      css/components/forms.css: {}
       css/components/eu-compliance.css: {}
     layout:
       css/layout.css: {}
@@ -38,7 +39,9 @@ print-pdf:
     version: VERSION
     css:
       theme:
-        css/print-pdf.css: { media: print }
+#        css/print-pdf.css: { media: print }
+        css/print-pdf.css: {}
+        css/colors.css: {}
 
 fonts:
   license:

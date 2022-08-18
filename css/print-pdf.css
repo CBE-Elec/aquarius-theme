@@ -1,18 +1,72 @@
 /*
   Aquarius - Formatage pour impression PDF
   CBE - V0.0.1 - 29.07.2022 - Création
+  CBE - V0.0.2 - 11.08.2022 - paramétrage page A4 pour formulaires d'inscription
 */
 
 body, input, textarea, select, a {
   color: #000;
   background: none;
+  width: 18cm;
 }
 
 body {
-  /*width: 640px;*/
+  font-family: "Roboto", sans-serif;
+  /*font-family: "Arial", sans-serif;*/
+  font-size: 1.125em;
 }
 
-.page {
-  background: transparent url("../../images/logo.png") no-repeat center center;
 
+div {
+    background: white;
+  }
+
+header {
+  text-align: center;
+  margin: 20px auto;  
+}
+
+header img {
+  width: 8cm;
+}
+
+img.webform-image-file {
+  height: 85px;
+  width: 85px;
+  margin: 20px;
+  border: solid black;
+}
+
+summary {
+    color: #00B2FF;
+}
+
+label {
+  font-weight: normal;
+}
+
+details {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.webform-element {
+  font-weight: bold;
+}
+
+p, ul, .form-item, .views-element-container{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.details-wrapper label {
+  display: inline;
+}
+
+.view-saison-adhesion {
+  display: none;
+}
+
+#inscription_a_l_aquarius--captcha {
+  display: none;
 }

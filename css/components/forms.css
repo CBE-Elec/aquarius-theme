@@ -1,0 +1,47 @@
+/*
+  Aquarius - forms : Elements de formulaire
+  CBE - V1.0   - 18.08.2022 Création
+*/
+
+  .container-inline .webform-flex--container > .form-item > input:not([type="checkbox"]),
+  .container-inline .webform-flex--container > .form-item > select,
+  .webform-flex--container > .form-item.webform-element--title-inline > input:not([type="checkbox"]),
+  .webform-flex--container > .form-item.webform-element--title-inline > select
+  {
+    width: 80%;  
+  }
+
+.webform-multiple-table td select, .webform-multiple-table td .form-type-textfield input, .webform-multiple-table td .form-type-email input, .webform-multiple-table td .form-type-url input, .webform-multiple-table td .form-type-tel input, .webform-multiple-table td .form-type-entity-autocomplete input, .webform-multiple-table td .form-type-webform-autocomplete input
+{
+  width: 80%;
+}
+
+.visually-hidden
+{
+  display: none!important;
+}
+
+.webform-options-display-buttons input:checked + label.webform-options-display-buttons-label {
+  color: #000;
+  border-color: #00b2ff;
+}
+
+.webform-options-display-buttons-description { 
+  margin-left: 0!important;
+} 
+
+.form-item ul li {
+  list-style-type: none;
+  margin: 0.25em 0 0 0;
+  padding-left: 1.2em;
+  background-image: url("../../images/puce.png");
+  background-position: 0 0.25em;
+  background-size: 0.5em;
+  background-repeat: no-repeat;
+}
+
+#a-payer {
+ color: #00b2ff;
+ font-weight: bold;
+ font-size: 1.8em;
+}

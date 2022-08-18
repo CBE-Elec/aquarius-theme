@@ -1,0 +1,18 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  {{ entity_print_css }}
+</head>
+<body>
+  <header>
+    <img class="header_logo" src="/themes/custom/aquarius-theme/images/logo.png" alt="logo">
+    <h1>{{ webform_token('[webform_submission:webform:title]', webform_submission) }}</h1>
+  </header>
+<div class="page">
+  <h3>Numéro d'inscription : {{ webform_token('[webform_submission:sid]', webform_submission) }}</h3>
+  <p>Date d'inscription : {{ webform_token('[webform_submission:completed]', webform_submission) }}<p>
+    {{ content }}
+</div>
+</body>
+</html>
