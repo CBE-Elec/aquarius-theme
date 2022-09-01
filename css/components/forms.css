@@ -1,6 +1,7 @@
 /*
   Aquarius - forms : Elements de formulaire
   CBE - V1.0   - 18.08.2022 Création
+  CBE - V1.1   - 02.02.2022 Ajout scroll pour tableaux de résulats de formulaires
 */
 
   .container-inline .webform-flex--container > .form-item > input:not([type="checkbox"]),
@@ -44,4 +45,8 @@
  color: #00b2ff;
  font-weight: bold;
  font-size: 1.8em;
+}
+
+.webform-bulk-form {
+  overflow: scroll;
 }
