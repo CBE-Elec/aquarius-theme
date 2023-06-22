@@ -7,7 +7,7 @@
 body, input, textarea, select, a {
   color: #000;
   background: none;
-  width: 18cm;
+  width: 19cm;
 }
 
 body {
@@ -27,7 +27,8 @@ header {
 }
 
 header img {
-  width: 8cm;
+  max-width: 8cm;
+  max-height: 5cm;
 }
 
 img.webform-image-file {
