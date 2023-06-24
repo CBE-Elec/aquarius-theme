@@ -44,6 +44,7 @@ summary {
 
 label {
   font-weight: normal;
+  display: inline;
 }
 
 details {
@@ -52,7 +53,7 @@ details {
 }
 
 .webform-element {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 p, ul, .form-item, .views-element-container{
