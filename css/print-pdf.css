@@ -2,6 +2,7 @@
   Aquarius - Formatage pour impression PDF
   CBE - V0.0.1 - 29.07.2022 - Création
   CBE - V0.0.2 - 11.08.2022 - paramétrage page A4 pour formulaires d'inscription
+  CBE - V0.0.3 - 24.06.2026 - modification pour adaptation à l'autorisation parentale du festival de l'eau 2023
 */
 
 body, input, textarea, select, a {
@@ -13,7 +14,7 @@ body, input, textarea, select, a {
 body {
   font-family: "Roboto", sans-serif;
   /*font-family: "Arial", sans-serif;*/
-  font-size: 1.125em;
+  font-size: 10pt;
 }
 
 
