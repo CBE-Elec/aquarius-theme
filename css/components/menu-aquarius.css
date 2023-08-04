@@ -11,7 +11,7 @@
 
 
 /* Espacement entre les liens du menu */
-ul.menu-aquarius a { 
+ul.menu-aquarius a, ul.menu-aquarius span.nolink  {  
   line-height: inherit;
   margin: 0;
   padding: 0.8em 0.5em;

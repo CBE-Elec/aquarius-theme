@@ -48,7 +48,7 @@ h4 {
 
 
 /* Menu principal */
-.menu-aquarius ul, .menu-aquarius a {
+.menu-aquarius ul, .menu-aquarius a, .menu-aquarius span.nolink {
   /* couleur de fond à définir pour ul sinon des lignes apparaissent entre les liens */
   background-color: #FFFFFE;
   color: #00b2ff;

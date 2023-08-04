@@ -73,3 +73,8 @@ p, ul, .form-item, .views-element-container{
 #inscription_a_l_aquarius--captcha {
   display: none;
 }
+
+
+.webform-signature-image {
+  max-width: 19cm;
+}

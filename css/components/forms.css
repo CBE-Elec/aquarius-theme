@@ -9,12 +9,12 @@
   .webform-flex--container > .form-item.webform-element--title-inline > input:not([type="checkbox"]),
   .webform-flex--container > .form-item.webform-element--title-inline > select
   {
-    width: 80%;  
+    width: 60%;  
   }
 
 .webform-multiple-table td select, .webform-multiple-table td .form-type-textfield input, .webform-multiple-table td .form-type-email input, .webform-multiple-table td .form-type-url input, .webform-multiple-table td .form-type-tel input, .webform-multiple-table td .form-type-entity-autocomplete input, .webform-multiple-table td .form-type-webform-autocomplete input
 {
-  width: 80%;
+  width: 60%;
 }
 
 .visually-hidden
