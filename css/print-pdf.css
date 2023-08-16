@@ -78,3 +78,7 @@ p, ul, .form-item, .views-element-container{
 .webform-signature-image {
   max-width: 19cm;
 }
+
+.center {
+  text-align: center;
+ }
