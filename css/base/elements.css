@@ -111,3 +111,7 @@ blockquote:after {
 blockquote > p:first-child {
   display: inline;
 }
+
+.center {
+  text-align: center;
+ }
