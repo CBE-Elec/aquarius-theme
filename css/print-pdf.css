@@ -76,6 +76,7 @@ p, ul, .form-item, .views-element-container{
 
 .webform-signature-image {
   max-width: 10cm;
+  display: block;
 }
 
 .signature-attestation {
