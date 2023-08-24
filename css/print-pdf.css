@@ -74,11 +74,13 @@ p, ul, .form-item, .views-element-container{
   display: none;
 }
 
-
 .webform-signature-image {
-  max-width: 19cm;
+  max-width: 10cm;
 }
 
-.center {
+.signature-attestation {
+  width: 200px;
+  display: block;
+  margin: auto;
   text-align: center;
- }
+}
