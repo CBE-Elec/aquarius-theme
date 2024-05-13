@@ -1,4 +1,4 @@
-{% extends "@classy/misc/status-messages.html.twig" %}
+{% extends "@claro/misc/status-messages.html.twig" %}
 {#
 /**
  * @file
@@ -20,7 +20,7 @@
 #}
 {% block messages %}
   {% if message_list is not empty %}
-    {{ attach_library('bartik/messages') }}
+    {{ attach_library('claro/messages') }}
     <div class="messages__wrapper layout-container">
       {{ parent() }}
     </div>
