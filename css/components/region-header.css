@@ -81,7 +81,8 @@
   /* Menu fixe en haut de page (ne bouge pas avec le scroll) */
   .region-header {
     position: fixed; /* Menu fixe en haut de la page */
-    top: var(--drupal-displace-offset-top, 0px);
+    top: 0;
+    /* top: var(--drupal-displace-offset-top, 0px); */
     z-index: 700;   /* Le menu passe au-dessus de tout > 500 pour les header table sticky */ 
   }
 
