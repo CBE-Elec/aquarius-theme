@@ -65,9 +65,10 @@ background-color: unset;  /* Annulation du paramètres de Classy */
     display: none;        /* Masquage des colonnes si l'écran est trop petit. */
   }
 
-  table.sticky-header { /*forçage de la position de header sticky quand on n'a pas de menu sticky pour le site */
-    top: 0!important;
+  /* table.sticky-header { /*forçage de la position de header sticky quand on n'a pas de menu sticky pour le site */
+/*    top: 0!important;
   }
+  */
 }
 
 @media screen and (max-width: 60em) { /* 920px */
@@ -83,12 +84,13 @@ background-color: unset;  /* Annulation du paramètres de Classy */
 }
 
 
-table.sticky-header {   /* Header sticky reste sous les menus */
-    z-index: 40!important;
-}
-
 .listing-title {
   display: inline-block;
   font-size: 1.7em;
   margin-bottom: 1em;
 }
+
+/* normalement la variabler --drupal-displace-offset-top doit etre calculée par Drupal. ça marche dans Claro mais je n'ai pas trouvé comment faire ici. Donc solution de repli, valeur fixe */
+table.sticky-header thead {
+  top: var(--drupal-displace-offset-top, 103px);
+  }

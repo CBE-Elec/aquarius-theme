@@ -2,12 +2,12 @@
   Aquarius - Region Sidebar : bandes latérales
   CBE - V1.0 - 18.11.2017
   CBE - V1.1 - 21.11.2019
+  CBE - V1.2 - 24-08-2024
 */
 
 /* Affichage faible largeur */
 .sidebar {
-  display: none;
-  width: 10%;
+  display: block;
   padding: 1em 0 0 0;
   overflow: hidden;
   font-size: 0.8em;

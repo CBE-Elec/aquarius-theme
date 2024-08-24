@@ -1,10 +1,11 @@
 /*
   Aquarius - Zone de contenu principal
   CBE - V1.1 - 21.11.2019
+  CBE - V1.2 - 24-08-2024
 */
 
 
 .main-content {
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 

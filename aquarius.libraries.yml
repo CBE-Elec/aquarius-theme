@@ -34,7 +34,7 @@ global-styling:
       css/colors.css: {}
       css/fonts.css: {}
       css/print.css: { media: print }
-
+      
 print-pdf:
     version: VERSION
     css:
