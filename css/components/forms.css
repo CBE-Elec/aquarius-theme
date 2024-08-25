@@ -2,6 +2,7 @@
   Aquarius - forms : Elements de formulaire
   CBE - V1.0   - 18.08.2022 Création
   CBE - V1.1   - 02.02.2022 Ajout scroll pour tableaux de résulats de formulaires
+  CBE - V1.2   - 24.08.2024 Enlève le  scroll pour tableaux de résulats de formulaires pour que je header des tableau reste sticky
 */
 
   .container-inline .webform-flex--container > .form-item > input:not([type="checkbox"]),
@@ -32,7 +33,7 @@
 } 
 
 .views-form {
-  overflow-x: scroll;
+  /* overflow-x: scroll; To allow sticky table header */
 }
 
 .form-item ul li {

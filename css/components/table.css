@@ -90,7 +90,10 @@ background-color: unset;  /* Annulation du paramètres de Classy */
   margin-bottom: 1em;
 }
 
-/* normalement la variabler --drupal-displace-offset-top doit etre calculée par Drupal. ça marche dans Claro mais je n'ai pas trouvé comment faire ici. Donc solution de repli, valeur fixe */
-table.sticky-header thead {
-  top: var(--drupal-displace-offset-top, 103px);
-  }
+/* Affichage sur écran large */
+@media all and (min-width: 768px) { /* !! Brakpoint commun avec paramètre de Superfish */
+  /* normalement la variable --drupal-displace-offset-top doit etre calculée par Drupal. ça marche dans Claro mais je n'ai pas trouvé comment faire ici. Donc solution de repli, valeur fixe */
+  table.sticky-header thead {
+    top: var(--drupal-displace-offset-top, 103px);
+    }
+} /* sur écran plus petit, pas besoin de surcharger */
