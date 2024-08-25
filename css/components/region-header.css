@@ -92,6 +92,7 @@
   .toolbar-horizontal .region-header, .toolbar-horizontal #page > header {   /* Si on a la barre d'admin, on place le menu en relatif. */
   position: relative;
   margin-bottom: 0em;
+  z-index: 500;
 }
 }
  
