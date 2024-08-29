@@ -82,8 +82,6 @@
   .region-header {
     position: fixed; /* Menu fixe en haut de la page */
     top: 0;
-    /* top: var(--drupal-displace-offset-top, 0px); */
-    z-index: 700;   /* Le menu passe au-dessus de tout > 500 pour les header table sticky */ 
   }
 
   #page > header {  /* Décalage du contenu après le header pour éviter la superposition */

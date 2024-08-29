@@ -49,7 +49,7 @@
 
 
 /* Menu (Block) pour les liens vers les réseaux sociaux */
-.region-footer #block-liensversreseauxsociaux ul {
+.region-footer ul.inline-icons {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -59,20 +59,20 @@
   padding: 0;
 }
 
-.region-footer #block-liensversreseauxsociaux li {
+.region-footer ul.inline-icons li {
   margin: 0 0.25em;
   text-align: center;
   padding: 5px;
 }
 
-.region-footer #block-liensversreseauxsociaux li img {
+.region-footer ul.inline-icons li img {
   width: 2em;
   height: 2em;
   max-width: unset; /* annule la propriété fixée sur les images dans elements.css */
 }
 
 /* Texte avant les icones masqué sur petit écran */
-.region-footer #block-liensversreseauxsociaux li:first-child {
+.region-footer ul.inline-icons li:first-child {
   display: none;
 }
 
@@ -91,7 +91,7 @@
   }
 
   /* Texte avant les icones affiché sur grand écran */
-  .region-footer #block-liensversreseauxsociaux li:first-child {
+  .region-footer ul.inline-icons li:first-child {
     display: list-item;
   }
 

@@ -5,6 +5,7 @@
   CBE - V1.1.1 - 18.12.2019
   CBE - V1.1.3 - 16.06.2020 - Ajout position forcée du header sticky sur vue mobile.
   CBE - V1.1.4 - 15.09.2020 - Add listing table format
+  CBE - V1.1.5 - 29-08-2024 - corrections pour sticky headers
 */
 
 table {
@@ -90,10 +91,6 @@ background-color: unset;  /* Annulation du paramètres de Classy */
   margin-bottom: 1em;
 }
 
-/* Affichage sur écran large */
-@media all and (min-width: 768px) { /* !! Brakpoint commun avec paramètre de Superfish */
-  /* normalement la variable --drupal-displace-offset-top doit etre calculée par Drupal. ça marche dans Claro mais je n'ai pas trouvé comment faire ici. Donc solution de repli, valeur fixe */
-  table.sticky-header thead {
-    top: var(--drupal-displace-offset-top, 103px);
-    }
-} /* sur écran plus petit, pas besoin de surcharger */
+table.sticky-header thead {
+  z-index: 100; /* reduire le z-index sur les entete sticky pour que le menu principal passe devant
+}
