@@ -26,15 +26,13 @@
   clear: right;
   float: right;
   padding: 0 0.2em;
+  z-index: 100;   /* pour que le menu ne disparaisse pas quand la souris va sur les liens */
 }
 
 .block-local-tasks-block:hover > nav {
   display: block;
 }
 
-.block-local-tasks-block .tabs li {
-  display: block;                   /* affichage en bloc et non en ligne (affichage Classy) */
-}
 
 .block-local-tasks-block .tabs a {   /* reduction du padding défini par classy */
   padding: 0.2em 0.3em;
@@ -45,7 +43,7 @@
   box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
-.region-sidebar-right .is-horizontal .tabs
+.block-local-tasks-block .tabs
 {
   flex-direction: column;
   

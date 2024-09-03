@@ -72,6 +72,7 @@ li.square-block {   /* Supprime les puces pour les listes au format square-block
 	text-align: right;		/* Positionnement du bloc à droite */
 	margin: 0 0 -2em 0;	/* Positionnement du bloc au niveau du haut du contenu (pas de ligne suplémentaire pour le bloc) */
 	min-height: 2em;		/* Hauteur du bloc fixe pour éviter les décalages du reste du contenu lors de la dispoarition du bloc (annimation tag_efface) */
+  z-index: 900;
 }
 
 /* décalage du second bloc-certificat pour éviter une superposition.
