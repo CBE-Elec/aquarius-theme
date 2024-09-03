@@ -67,6 +67,20 @@ li.square-block {   /* Supprime les puces pour les listes au format square-block
   to {opacity: 0; height: 0; -webkit-transform: translateY(-1em);}
 }
 
+.bloc-tag {
+	float: none;			/* pas de positionnement flottant sinon les blocs autour ne s'écoulent pas dessous (overflow none) */
+	text-align: right;		/* Positionnement du bloc à droite */
+	margin: 0 0 -3.2em 0;	/* Positionnement du bloc au niveau du haut du contenu (pas de ligne suplémentaire pour le bloc) */
+	min-height: 2em;		/* Hauteur du bloc fixe pour éviter les décalages du reste du contenu lors de la dispoarition du bloc (annimation tag_efface) */
+}
+
+/* décalage du second bloc-certificat pour éviter une superposition.
+Besoin d'identifier la 2nd balise .block du dessus pour agit uniquement sur le 2nd .bloc-certificat */
+.block:has(.bloc-tag):nth-child(2) .bloc-tag {
+  position: relative;
+  top: 2.5em;
+}
+
 
 .button a, .button a:hover, .button a:focus, .button a:visited, .button a:active,
 .more-link a, .more-link a:hover, .more-link a:focus, .more-link a:visited, .more-link a:active  {
