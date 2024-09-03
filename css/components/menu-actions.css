@@ -26,7 +26,6 @@
   clear: right;
   float: right;
   padding: 0 0.2em;
-  z-index: 100;   /* pour que le menu ne disparaisse pas quand la souris va sur les liens */
 }
 
 .block-local-tasks-block:hover > nav {
@@ -45,6 +44,6 @@
 
 .block-local-tasks-block .tabs
 {
-  flex-direction: column;
+  /*flex-direction: column;  Desactiver le temps de trouver une solution pour la dispation du menu */
   
 }
