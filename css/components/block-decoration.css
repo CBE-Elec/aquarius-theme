@@ -78,7 +78,7 @@ li.square-block {   /* Supprime les puces pour les listes au format square-block
 Besoin d'identifier la 2nd balise .block du dessus pour agit uniquement sur le 2nd .bloc-certificat */
 .block:has(.bloc-tag):nth-child(2) .bloc-tag {
   position: relative;
-  top: 2.5em;
+  top: 2em;
 }
 
 
