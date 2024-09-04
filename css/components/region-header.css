@@ -5,6 +5,7 @@
   CBE - V1.1.1 - 02.12.2019
   CBE - V1.1.2 - 24.08.2024
   CBE - V1.1.3 - 02.09.2024
+  CBE - V1.2.0 - 04.09.2024 - cleaning useless tags. Add .region-breadcrumb for bloc-tag placement
 */
 
 /* ------------------ .region-header ------------------ */
@@ -44,10 +45,6 @@
   order: 3;
 }
 
-.region-header .block-views-blockbloc-utilisateur-block-2 { /* Partie relative aux messages personnels: certificat médical */
-  order: 2;
-}
-
 /* Affichage sur écran large */
 @media all and (min-width: 768px) { /* !! Brakpoint commun avec paramètre de Superfish */
   .region-header {
@@ -69,10 +66,6 @@
   .region-header #block-info-membre-connecte { /* Partie relative au menu utilisateur */
     width: 10%;
     order: 3;
-  }
-  
-  .region-header .block-views-blockbloc-utilisateur-block-2 { /* Partie relative aux messages personnels: certificat médical */
-    order: 2;
   }
 
   /* Ajustement de l'alignement logo -- menu -- user block */
@@ -102,55 +95,6 @@
  max-height: 4.7em; 
 }
 
- 
-  /* menu toujours en haut de la page même si scroll */
-/*  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #FFFFFF;
-  height: 100px;*/
-}
-/* il faut un padding à l'élément parent pour que le contenu ne parte pas sous le menu */
-/*#page header {
-  padding-top: 100px;
-}*/
-
-
-
-/**
-  Menu utilisateur, placé dans le header.
-  Réduction sous forme d'icone --> to do
-**/
-
-/*.region-header .info-membre {
-  margin: 0 0;
-  float: right;
-  position: relative;
-  right: 40px;
-  white-space: nowrap;
-}
-*/
-/* .region-header .info-membre:before {  /* logo avant le menu 
-  content: "";
-  display: block;
-  background: transparent url("../../images/Picto_Connexion.png") no-repeat center center;
-  background-size: 2em 2em;
-  width: 2em;
-  height: 2em;
-  float: left;
-  left: -1em;
-  top: -4px;
-  position: relative;
-}
-*/
-
-.region-header .bloc-certificat {
-  margin: 10px 0;
-  float: right;
-  position: relative;
-  right: 40px;
-  white-space: nowrap; 
-}
-
+.region-breadcrumb {  /* pour éviter de créer un nouveau fichier, c'est ici... */
+  min-height: 2em; /* force la hauteur de la zone pour que le contenu (blocs tag) reste dessous */
+  }
