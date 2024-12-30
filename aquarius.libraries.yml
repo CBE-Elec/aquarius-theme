@@ -5,6 +5,7 @@ global-styling:
       css/base/elements.css: {}
     component:
 #Modifiés pour Aquarius
+      css/components/button.css: {}
       css/components/block-decoration.css: {}
       css/components/info_membre.css: {}
       css/components/main-content.css: {}
