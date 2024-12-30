@@ -36,6 +36,11 @@ li.square-block {   /* Supprime les puces pour les listes au format square-block
 	background: none !important;
 }
 
+.pager li {  /* pour liens de pagination */
+  background-image: none !important;
+  padding-left: 0 !important;
+}
+
 .scrolling { /* Autorise un scroll en cas de dépassement du contenu */
   overflow: auto;
 }
@@ -103,7 +108,3 @@ li.square-block {   /* Supprime les puces pour les listes au format square-block
 	font-size: 0.8em;
 }
 
-.pager li {  /* pour liens de pagination */
-  background-image: none !important;
-  padding-left: 0;
-}
