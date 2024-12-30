@@ -23,7 +23,7 @@ global-styling:
       css/components/region-sidebar.css: {}
       css/components/slideshow.css: {}
       css/components/sortie.css: {}
-      css/components/table.css: {}
+      css/components/tables.css: {}
       css/components/vue-bureau.css: {}
       css/components/forum.css: {}
       css/components/contact-form.css: {}
