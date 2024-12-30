@@ -104,6 +104,6 @@ li.square-block {   /* Supprime les puces pour les listes au format square-block
 }
 
 .pager li {  /* pour liens de pagination */
-  background-image: none;
+  background-image: none !important;
   padding-left: 0;
 }
