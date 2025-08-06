@@ -40,6 +40,7 @@ global-styling:
       css/components/form--text.css: {}
       css/components/form--checkbox-radio.css: {}
       css/components/vertical-tabs.css: {}
+      css/components/pager.css: {}
     layout:
       css/layout.css: {}
     theme:

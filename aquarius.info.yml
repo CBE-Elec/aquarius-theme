@@ -2,7 +2,7 @@ name: Aquarius
 type: theme
 description: Thème pour le club de plongée Aquarius
 package: Aquarius
-version: "2.0.1"
+version: "2.0.2"
 core_version_requirement: ^10
 # Defines the base theme
 base theme: false
@@ -12,6 +12,7 @@ logo: 'images/logo.png'
 libraries:
   - aquarius/global-styling
   - aquarius/fonts
+  - core/normalize
   - core/drupal.displace
 ckeditor_stylesheets:
   - css/colors.css

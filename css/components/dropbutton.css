@@ -38,18 +38,25 @@
   margin-inline: 0 var(--space-m);
 }
 
+
 .dropbutton-widget {
-  position: relative;
+  position: relative!important;
   flex: 1 1 auto;
+  border-radius: var(--button-border-radius-size);
+  background-color: var(--button-bg-color);
 }
 
 .js .dropbutton-wrapper.open .dropbutton-widget {
   z-index: var(--dropbutton-widget-z-index);
 }
 
+.js td .dropbutton-multiple {
+  padding-right: 0;
+}
+
 /**
- * Dropbutton list.
- */
+* Dropbutton list.
+*/
 
 .dropbutton {
   display: block;
@@ -60,10 +67,6 @@
   list-style: none;
 }
 
-.dropbutton-widget {
-  border-radius: var(--button-border-radius-size);
-  background-color: var(--button-bg-color);
-}
 
 /* Variants. */
 
@@ -115,14 +118,15 @@
  * Dropbutton toggler.
  */
 
-.dropbutton__toggle {
+.dropbutton__toggle,
+.dropbutton-toggle button {
   position: absolute;
   z-index: 3;
   top: 0;
   right: 0; /* LTR */
   bottom: 0;
-  width: var(--dropbutton-toggle-size);
-  height: var(--dropbutton-toggle-size);
+  width: var(--dropbutton-extrasmall-toggle-size);
+  height: var(--dropbutton-extrasmall-toggle-size);
   border: var(--dropbutton-border-size) solid transparent !important; /* 1 */
   border-inline-start: var(--dropbutton-border-size) solid white !important;
   border-radius: 0 var(--button-border-radius-size) var(--button-border-radius-size) 0; /* LTR */
@@ -131,13 +135,9 @@
   appearance: none;
 }
 
-[dir="rtl"] .dropbutton__toggle {
-  right: auto;
-  left: 0;
-  border-radius: var(--button-border-radius-size) 0 0 var(--button-border-radius-size);
-}
 
-.dropbutton__toggle::before {
+.dropbutton__toggle::before,
+.dropbutton-toggle button::before {
   position: absolute;
   top: 50%;
   right: 50%;
@@ -151,17 +151,20 @@
 
 /* Toggler states. */
 
-.dropbutton__toggle:hover {
+.dropbutton__toggle:hover,
+.dropbutton-toggle button:hover {
   color: var(--button-fg-color);
   background-color: var(--button--hover-bg-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.dropbutton__toggle:focus {
+.dropbutton__toggle:focus,
+.dropbutton-toggle button:focus {
   z-index: 2;
 }
 
-.dropbutton__toggle:active {
+.dropbutton__toggle:active,
+.dropbutton-toggle button:active {
   color: var(--button-fg-color);
   background-color: var(--button--active-bg-color);
 }
@@ -170,9 +173,6 @@
   transform: translate(50%, -50%) rotate(180deg);
 }
 
-[dir="rtl"] :is(.dropbutton-wrapper.open .dropbutton__toggle::before) {
-  transform: translate(50%, -50%) rotate(-180deg);
-}
 
 /* Toggler variants */
 
