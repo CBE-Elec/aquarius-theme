@@ -1,0 +1,40 @@
+name: Aquarius
+type: theme
+description: Thème pour le club de plongée Aquarius
+package: Aquarius
+version: "1.2.13"
+core_version_requirement: ^10
+# Defines the base theme
+base theme: claro
+logo: 'images/logo.png'
+
+# Defines libraries group in which we can add css/js.
+libraries:
+  - aquarius/global-styling
+  - aquarius/fonts
+  - core/drupal.displace
+ckeditor_stylesheets:
+  - css/colors.css
+  - css/base/elements.css
+  - css/fonts.css
+  - css/components/table.css
+  - css/components/page.css
+  - css/components/block-decoration.css
+ckeditor5-stylesheets:
+  - css/colors.css
+  - css/base/elements.css
+  - css/fonts.css
+  - css/components/table.css
+  - css/components/page.css
+  - css/components/block-decoration.css
+regions:
+  header: 'Entête'
+  slideshow: 'Diaporama photo'
+  breadcrumb: 'Breadcrumb'
+  content: 'Contenu'
+  sidebar_left: 'Colonne de gauche'
+  sidebar_right: 'Colonne de droite'
+  footer: 'Pied de page'
+
+entity_print:
+  all: 'aquarius/print-pdf'

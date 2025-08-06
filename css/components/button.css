@@ -15,7 +15,9 @@
     margin: 0.2em 1em 1em 1em;
     text-align: center;
     color: black;
+    font-family: inherit;
     font-size: 0.9em;
+    line-height: 1rem;
     text-decoration: none;
     border: 1px solid #a6a6a6;
     border-radius: 20em;
@@ -29,4 +31,26 @@
     transition: all 0.1s;
     -webkit-font-smoothing: antialiased;
     width: auto !important;
+}
+
+.intable-button {
+  /* display: inline-flex!important; */
+  display: inline-block;
+  min-height: 0em!important;
+  margin: 0;
+  padding: calc(var(--dropbutton-extrasmall-spacing-size) - var(--dropbutton-border-size)) calc(var(--space-l) - var(--dropbutton-border-size));
+  cursor: pointer;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: var(--button-fg-color);
+  border: var(--dropbutton-border-size) solid transparent !important; /* 1 */
+  border-radius: var(--button-border-radius-size);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background-color: var(--button-bg-color);
+  font-size: var(--dropbutton-extrasmall-font-size);
+  font-weight: 700;
+  line-height: var(--dropbutton-extrasmall-line-height);
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
 }

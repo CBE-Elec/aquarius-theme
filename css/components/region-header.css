@@ -24,8 +24,8 @@
   justify-content: space-between;
   align-items: baseline;
   /*height: 82px;*/
-  height: 4.7em;
-  z-index: 600;
+  height: var(--aquarius-header-height);
+  z-index: 100;
   background-color: #FFFFFE;
   border-bottom-style: solid;
   border-bottom-color: #004FEE;
@@ -40,7 +40,7 @@
   width: 10%;
   order: 0;
 }
-.region-header #block-info-membre-connecte { /* Partie relative au menu utilisateur */
+.region-header #block-info-membre-connecte, .region-header .block-views-blockmenu-utilisateur-block-1 { /* Partie relative au menu utilisateur */
   width: 10%;
   order: 3;
 }

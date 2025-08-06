@@ -51,3 +51,7 @@
 	grid-row-start: 1;
 	grid-row-end: 5;
 }
+
+.view-sortie .views-field-field-etat {
+  float: right;
+}

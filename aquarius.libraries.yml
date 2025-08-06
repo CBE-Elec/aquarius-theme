@@ -3,6 +3,7 @@ global-styling:
   css:
     base:
       css/base/elements.css: {}
+      css/base/variables.css: {}
     component:
 #Modifiés pour Aquarius
       css/components/button.css: {}
@@ -24,11 +25,21 @@ global-styling:
       css/components/slideshow.css: {}
       css/components/sortie.css: {}
       css/components/tables.css: {}
+      css/components/tablesort-indicator.css: {}
       css/components/vue-bureau.css: {}
       css/components/forum.css: {}
+      css/components/link.css: {}   # import depuis Claro
       css/components/contact-form.css: {}
-      css/components/forms.css: {}
+      css/components/form.css: {}   # import depuis Claro
+      css/components/forms.css: {}  # surcharge Aquarius
       css/components/eu-compliance.css: {}
+      css/components/views-exposed-form.css: {}
+      css/components/dropbutton.css: {}
+      css/components/tabs.css: {}
+      css/components/form--select.css: {}
+      css/components/form--text.css: {}
+      css/components/form--checkbox-radio.css: {}
+      css/components/vertical-tabs.css: {}
     layout:
       css/layout.css: {}
     theme:

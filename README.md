@@ -1,2 +1,2 @@
 # aquarius-themes
-Thèmes pour le site web de l'Aquarius (Drupal 8)
+Thèmes pour le site web de l'Aquarius (Drupal 10)

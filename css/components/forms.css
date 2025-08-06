@@ -40,10 +40,26 @@
   list-style-type: none;
   margin: 0.25em 0 0 0;
   padding-left: 1.2em;
-  background-image: url("../../images/puce.png");
+  /* background-image: url("../../images/puce.png");
   background-position: 0 0.25em;
   background-size: 0.5em;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+}
+
+.form-item label {
+  display: table;
+  margin-block: calc(var(--space-xs) / 2);
+  font-size: var(--font-size-s);
+  font-weight: bold;
+  line-height: var(--line-height-form-label);
+}
+
+
+.form-actions, .field-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-block: var(--space-xs);
 }
 
 #a-payer {

@@ -4,8 +4,9 @@
 */
 
 /* CBE : Utilisation de l'ID #block-info-membre-connecte possible car menu / liste définie dans le coeur de Drupal. Donc nom fixe */
-
-#block-info-membre-connecte:before { /* Logo du menu */
+/* Mais pas constant si changement de nom de thème ! */
+/* tentative avec block-views-blockmenu-utilisateur-block-1 */
+#block-info-membre-connecte:before, .block-views-blockmenu-utilisateur-block-1:before { /* Logo du menu */
   background: transparent url("../../images/Picto_Connexion.png") no-repeat center center;
   background-size: 2em 2em;
   width: 2em;
@@ -16,7 +17,7 @@
   margin-left: 15%;
 }
 
-#block-info-membre-connecte > div {
+#block-info-membre-connecte > div, .block-views-blockmenu-utilisateur-block-1 > div {
   display: none;
   position: absolute!important;  /* CBE revoir le positionnement */
   top: 80px;
@@ -30,14 +31,14 @@
   z-index: 500;
 }
 
-#block-info-membre-connecte:hover > div, #block-info-membre-connecte:focus > div {
+#block-info-membre-connecte:hover > div, #block-info-membre-connecte:focus > div, .block-views-blockmenu-utilisateur-block-1:hover > div, .block-views-blockmenu-utilisateur-block-1:focus > div {
 /* Affichage au passage de la souris ou au focus */
   display: block;
 }
 
 /* Affichage sur écran large */
 @media all and (min-width: 768px) { /* !! Brakpoint commun avec paramètre de Superfish */
-  #block-info-membre-connecte > div {
+  #block-info-membre-connecte > div, .block-views-blockmenu-utilisateur-block-1 > div {
     right: unset;
   }
 }
