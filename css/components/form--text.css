@@ -14,7 +14,8 @@
 input.form-text,
 select.form-select,
 input.form-date,
-input.form-time {
+input.form-time,
+input.form-email {
   box-sizing: border-box;
   max-width: 100%;
   min-height: calc(((var(--input-padding-vertical) + var(--input-border-size)) * 2) + var(--input-line-height)); /* iOS. */
@@ -106,7 +107,8 @@ input.from-time {
     inset 0 0 0 var(--input-border-size) var(--input--hover-border-color);
 }
 
-.form-element.error {
+.form-element.error,
+input.error {
   border-width: var(--input--error-border-size);
   border-color: var(--input--error-border-color);
 }

@@ -41,6 +41,7 @@ global-styling:
       css/components/form--checkbox-radio.css: {}
       css/components/vertical-tabs.css: {}
       css/components/pager.css: {}
+      css/components/messages.css: {}
     layout:
       css/layout.css: {}
     theme:

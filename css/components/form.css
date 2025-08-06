@@ -79,7 +79,9 @@ tr .form-item,
 }
 
 .form-item__label.form-required::after,
-.fieldset__label.form-required::after {
+.fieldset__label.form-required::after,
+.form-item label.form-required::after,
+.fieldset label.form-required::after {
   display: inline-block;
   margin-inline: 0.15em;
   content: "*";
@@ -106,7 +108,8 @@ tr .form-item,
  * Error message (Inline form errors).
  */
 
-.form-item__error-message {
+.form-item__error-message,
+.form-item label.error {
   margin-block: calc(6rem / 16); /* 6px */
   color: var(--input--error-color);
   font-size: var(--font-size-xs); /* ~13px */
