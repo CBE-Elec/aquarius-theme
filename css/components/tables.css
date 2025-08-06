@@ -24,20 +24,19 @@ caption {
 /* 1ère lignes (header) */
 th {
   position: relative;
-  /*background: rgb(243, 244, 249);*/
   box-sizing: border-box;
   border-bottom: 1px solid;
   border-bottom-color: #000000;
-  /*padding: 0.2em;*/
+  padding: 0.2em;
+  /* padding: var(--space-xs) var(--space-m); */
+  height: var(--space-xl);
+  /*  line-height: 2.25em;*/
+  line-height: 1.25rem;
   vertical-align: bottom;
   text-align: start;
-/*  line-height: 2.25em;*/
-
-  height: var(--space-xl);
-  padding: var(--space-xs) var(--space-m);
-  color: var(--color-text);
+    color: var(--color-text);
+  /*background: rgb(243, 244, 249);*/
   background: var(--color-gray-050);
-  line-height: 1.25rem;
 }
 }
 

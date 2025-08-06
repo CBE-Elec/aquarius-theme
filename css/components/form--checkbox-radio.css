@@ -27,11 +27,6 @@ input.form-radio {
   transform: translateY(-60%);
 }
 
-.form-type--boolean.form-item--no-label,
-input.type--boolean.form-item--no-label {
-  margin-inline-start: 0;
-}
-
 .form-type--boolean.form-item--no-label .form-boolean {
   position: static;
   float: none;
@@ -44,8 +39,14 @@ table .form-type--boolean .form-boolean,
 table input.form-checkbox,
 table input.form-radio {
   inset-block-start: 0;
+  transform: translateY(-50%); /* Décalage différent pour les tableaux */
+}
+table th .form-type--boolean .form-boolean,
+table th input.form-checkbox,
+table th input.form-radio {
   margin-inline-start:0;
 }
+
 
 /**
  * When form items are nested in radios or checkboxes group, reduce the default
@@ -134,7 +135,8 @@ input.form-checkbox {
 }
 
 .form-boolean--type-checkbox:checked,
-.form-type--boolean input.form-checkbox:checked {
+.form-type--boolean input.form-checkbox:checked,
+input.form-checkbox:checked {
   border-color: var(--input--focus-border-color);
   background-color: var(--input--focus-border-color);
   background-image: url("data:image/svg+xml,%3csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.795 7.096l2.387 2.506 6.023-6.327 1.484 1.56-7.507 7.89L2.31 8.656z' fill='%23fff'/%3e%3c/svg%3e");
@@ -143,7 +145,9 @@ input.form-checkbox {
 .form-boolean--type-checkbox:checked:active,
 .form-boolean--type-checkbox:checked:hover,
 .form-type--boolean input.form-checkbox:checked:active,
-.form-type--boolean input.form-checkbox:checked:hover {
+.form-type--boolean input.form-checkbox:checked:hover,
+input.form-checkbox:checked:active,
+input.form-checkbox:checked:hover {
   border-color: var(--input-fg-color);
   background-color: var(--input-fg-color);
 }
