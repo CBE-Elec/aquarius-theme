@@ -18,14 +18,14 @@ ckeditor_stylesheets:
   - css/colors.css
   - css/base/elements.css
   - css/fonts.css
-  - css/components/table.css
+  - css/components/tables.css
   - css/components/page.css
   - css/components/block-decoration.css
 ckeditor5-stylesheets:
   - css/colors.css
   - css/base/elements.css
   - css/fonts.css
-  - css/components/table.css
+  - css/components/tables.css
   - css/components/page.css
   - css/components/block-decoration.css
 regions:
