@@ -12,30 +12,26 @@ body, input, textarea, select, a {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  /*font-family: "Arial", sans-serif;*/
+  font-family: "DejaVu Sans", sans-serif;
   font-size: 10pt;
 }
-
 
 div {
     background: white;
   }
 
-header {
+  .header_logo {
   text-align: center;
-  margin: 20px auto;  
+  width: 200px!important;
+  display:block;
+  margin: 20px auto;
 }
 
-header img {
-  max-width: 8cm;
-  max-height: 5cm;
-}
-
-img.webform-image-file {
-  height: 85px;
-  width: 85px;
-  margin: 20px;
+img.webform-signature-image {
+  text-align: center;
+  width: 250px;
+  display: block;
+  margin: 20px auto;
   border: solid black;
 }
 
@@ -72,16 +68,4 @@ p, ul, .form-item, .views-element-container{
 
 #inscription_a_l_aquarius--captcha {
   display: none;
-}
-
-.webform-signature-image {
-  max-width: 10cm;
-  display: block;
-}
-
-.signature-attestation {
-  width: 200px;
-  display: block;
-  margin: auto;
-  text-align: center;
 }
