@@ -3,6 +3,7 @@
   CBE - V1.0   - 18.08.2022 Création
   CBE - V1.1   - 02.02.2022 Ajout scroll pour tableaux de résulats de formulaires
   CBE - V1.2   - 24.08.2024 Enlève le  scroll pour tableaux de résulats de formulaires pour que je header des tableau reste sticky
+  CBE - 2025-08-07 : adaptations pour se dissocier de Claro
 */
 
   .container-inline .webform-flex--container > .form-item > input:not([type="checkbox"]),

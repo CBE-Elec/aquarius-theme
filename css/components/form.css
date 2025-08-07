@@ -1,5 +1,5 @@
 /*
-CBE - 29/07/2025 : import depuis Claro
+CBE - 29/07/2025 : import depuis Claro et adaptations
  */
 
 /**
@@ -51,6 +51,10 @@ tr .form-item,
 .form-item label.option {
   display: inline;
   font-weight: normal;
+}
+
+.form-item label.webform-options-display-buttons-label {
+  display: table-cell;
 }
 
 .form-item__label.has-error {
