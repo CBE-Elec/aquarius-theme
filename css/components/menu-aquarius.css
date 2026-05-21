@@ -21,24 +21,55 @@ ul.menu-aquarius a, ul.menu-aquarius span.nolink  {
 
 /* Menu initial, pour largeur normale, et caractéristiques communes */
 .menu-aquarius {
-  /*display: block;*/
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-around;
-  max-width: 40em;
+  justify-content: right;
+  /* max-width: 40em; */
   align-items: center;
   font-size: 1em;
   line-height: 2em;
   text-transform: uppercase;
 }
 
-.menu-aquarius > li:first-child a {   /* Pictogramme "maison" pour le 1er lien vers Accueil */
+.region-slideshow .menu-gestion:parent {
+  display: block;
+}
+
+ul.menu-gestion {
+  padding-right: 5em!important;
+}
+
+ul.menu-gestion:not(.sf-accordion):after {
+  content: "";
+  background: transparent url("../../images/Picto_Gestion.png") no-repeat center center;
+  background-size: 2em 2em;
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  visibility: visible;
+}
+
+.region-slideshow .block-superfish>div>a {
+ background: transparent url("../../images/Picto_Gestion.png") no-repeat center center;
+
+  background-size: 2em 2em;
+  width: 2em;
+  height: 3em;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.region-slideshow .block-superfish>div>a>span {
+  display: none;
+}
+
+/* .menu-aquarius > li:first-child a {   /* Pictogramme "maison" pour le 1er lien vers Accueil *//*
   display : inline-block;
   overflow : hidden;
   text-align : left;
   text-indent : -9999px;
   white-space : nowrap;
-  width: 2em;     /* CBE - à revoir car devrait être de la taille du background */
+  width: 2em;     /* CBE - à revoir car devrait être de la taille du background *//*
   height: 3em;
   margin: 0;
   padding: 0;
@@ -48,13 +79,13 @@ ul.menu-aquarius a, ul.menu-aquarius span.nolink  {
   background-repeat: no-repeat;
   background-position: top center;
   background-position-y: -0.9em;
-}
+} */
 
-.menu-aquarius > li:first-child a:hover, .menu-aquarius > li:first-child a.is-active  {   /* Changement couleur du picto */
-  background-image: url("../../images/Picto_Accueil_hover.png");
-}
+/* .menu-aquarius > li:first-child a:hover, .menu-aquarius > li:first-child a.is-active  {   /* Changement couleur du picto */
+ /* background-image: url("../../images/Picto_Accueil_hover.png");
+} */
 
-ul.menu-aquarius li.sfHover>ul {   /* Positionnement des sous menu d'un menu ouvert */
+ul.menu-aquarius li.sfHover>ul , ul.menu-gestion li.sfHover>ul {   /* Positionnement des sous menu d'un menu ouvert */
   top: 3.8em; /* Positionnement du menu ouvert juste sous la bordure de l'en-tête */
   left: 2em;
 }
@@ -65,7 +96,7 @@ Le menu initial est masqué par Superfish.
 */
 
 /* Menu de navigation, en affichage faible largeur */
-.menu-aquarius.sf-accordion {
+.menu-aquarius.sf-accordion, .menu-gestion.sf-accordion {
   position: absolute !important;  /* placement du menu sous le picto burgger (placement relatif passe sur le picto, imposé par Superfish) */
   width: 90% !important;          /* forcer à couvrir la largeur de l'écran (imposition par Superfish sinon) */
   background-color: #ffffff;      /* Fond blanc pour effet masquer le contenu de la page, en-dessous */
@@ -81,9 +112,7 @@ Le menu initial est masqué par Superfish.
 }
 
 /* Bouton d'affichage / masquage du menu, en affichage faible largeur */
-/* #block-menuprincipal-2 CBE - identification par #id à revoir, mais class menu-aquarius non ajoutée dans le HTML.*/
-
-.region-header .block-superfishmain #superfish-main-toggle:before { /* Logo du menu */
+.region-header .block-superfish>div>a { /* Logo du menu */
   content: "";
   background: transparent url("../../images/Picto_Burger_Menu.png") no-repeat center center;
   background-size: 2em 2em;
@@ -95,6 +124,7 @@ Le menu initial est masqué par Superfish.
 }
 
 /* Masque le titre du menu réduit (nom modifiable dans Superfish, à définir sur " ") */
-.region-header .block-superfishmain #superfish-main-toggle span {  
-  display: none;
+.region-header .block-superfish>div>a>span {
+  display: none; 
 }
+

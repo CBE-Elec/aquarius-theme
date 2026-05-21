@@ -26,6 +26,7 @@ regions:
   slideshow: 'Diaporama photo'
   breadcrumb: 'Breadcrumb'
   content: 'Contenu'
+  dashboard: 'Tableau de bord'
   sidebar_left: 'Colonne de gauche'
   sidebar_right: 'Colonne de droite'
   footer: 'Pied de page'

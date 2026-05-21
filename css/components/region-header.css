@@ -36,7 +36,7 @@
 .region-header .block-system-branding-block { /* Partie relative au logo */
   order: 1;
 }
-.region-header .block-superfishmain { /* Partie relative au menu de navigation */
+.region-header .block-superfish { /* Partie relative au menu de navigation */
   width: 10%;
   order: 0;
 }
@@ -58,7 +58,7 @@
     text-align: left;
     position: relative;
   }
-  .region-header .block-superfishmain { /* Partie relative au menu de navigation */
+  .region-header .block-superfish { /* Partie relative au menu de navigation */
     width: 100%;
     order: 1;
     flex: 1;

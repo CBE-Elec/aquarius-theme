@@ -32,6 +32,12 @@
           {{ page.breadcrumb }}
         </div>
       {% endif %}
+
+      {% if page.dashboard %}    
+        <section class="section dashboard">
+          {{ page.dashboard }}
+        </section>
+      {% endif %}
       <section class="section">
         <a id="main-content" tabindex="-1"></a>
         {{ page.content }}

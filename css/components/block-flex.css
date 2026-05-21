@@ -1,0 +1,10 @@
+/* Pour disposition flex sous forme de blocs */
+
+.block-flex {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1.0em;
+    align-items: center;
+    text-align: center;
+}

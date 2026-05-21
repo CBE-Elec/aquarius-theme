@@ -13,17 +13,18 @@ global-styling:
       css/components/menu-actions.css: {}
       css/components/menu-aquarius.css: {}
       css/components/menu-user.css: {}
-      css/components/bloc-certificat.css: {}
+      css/components/block-flex.css: {}
       css/components/node.css: {}
       # css/components/notation-etoiles.css: {}
       css/components/page.css: {}
       css/components/profile.css: {}
-      css/components/referents.css: {}
       css/components/region-footer.css: {}
       css/components/region-header.css: {}
       css/components/region-sidebar.css: {}
       css/components/slideshow.css: {}
       css/components/sortie.css: {}
+      css/components/page-accueil-public.css: {}
+      css/components/dashboard.css: {}
       css/components/tables.css: {}
       css/components/tablesort-indicator.css: {}
       css/components/vue-bureau.css: {}

@@ -6,7 +6,7 @@
 */
 
 .region-slideshow {
-  display: none;		/* Bloc masqué sur petit écran */
+  /*display: none;		/* Bloc masqué sur petit écran */
   width: 100%;
   margin: 0 0 ;
   padding: 0 0;
