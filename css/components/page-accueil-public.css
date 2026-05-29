@@ -6,7 +6,7 @@
     width: 70%;
 }
 
-.accueil_public a {
+.accueil_public a.button {
     position: relative;
     top: -30px;
     left: 0px;
@@ -21,13 +21,13 @@
     text-shadow: unset;
 }
 
-.accueil_public a:hover {
+.accueil_public a.button:hover {
     color: aqua;
 }
 
 /* Affichage sur écran large */
 @media all and (min-width: 768px) { 
-    .accueil_public a {
+    .accueil_public a.button {
         top: -100px;
         left: 150px;
     }
