@@ -7,21 +7,28 @@
 }
 
 .accueil_public a {
-top: -100px;
-position: relative;
-display: block;
-left: 100px;
-width: 130px!important;
-height: unset;
-padding: 1.0em;
-border-radius: unset;
-background-image: unset;
-background-color: #004FEE;
-color: white;
-text-shadow: unset;
-
+    position: relative;
+    top: -30px;
+    left: 0px;
+    display: block;
+    width: 130px!important;
+    height: unset;
+    padding: 1.0em;
+    border-radius: unset;
+    background-image: unset;
+    background-color: #004FEE;
+    color: white;
+    text-shadow: unset;
 }
 
 .accueil_public a:hover {
     color: aqua;
+}
+
+/* Affichage sur écran large */
+@media all and (min-width: 768px) { 
+    .accueil_public a {
+        top: -100px;
+        left: 150px;
+    }
 }
