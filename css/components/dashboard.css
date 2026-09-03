@@ -94,7 +94,7 @@
 .region-dashboard .block-views-blockcaci-liste-block-2, .region-dashboard .block-views-blockcaci-liste-block-3{
     grid-row-start: auto;
     grid-column-start: 1;
-    grid-column-end: 5;
+    grid-column-end: 1;
     overflow: scroll;
     scrollbar-width: thin;
     scrollbar-color: #00B2FF #f1f1f1;
