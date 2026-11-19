@@ -8,7 +8,7 @@
 .comments_section {
     display: block;
     overflow: hidden;
-    border: #004FEE 2px solid;
+    border-top: #004FEE 3px solid;
     /* border-radius: 4px;
     box-shadow: 0px 0px 2px 2px #DDD;
     padding: 0.116em 1.1600928074246%;
@@ -40,8 +40,11 @@
 }
 
 
-.comments_section .field--label-inline {
+.comments_section .field--label-inline,
+.comments_section form .field--name-field-note label {
   display: flex;
   align-items: baseline; /* Aligne le texte de l'étiquette avec la première ligne du contenu */
   gap: 0.5rem; /* Espace entre le titre et le contenu */
 }
+
+    
