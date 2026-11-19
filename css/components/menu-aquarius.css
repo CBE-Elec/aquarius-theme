@@ -112,7 +112,7 @@ Le menu initial est masqué par Superfish.
 }
 
 /* Bouton d'affichage / masquage du menu, en affichage faible largeur */
-.region-header .block-superfish>div>a { /* Logo du menu */
+.region-header .block-superfish div>a { /* Logo du menu */
   content: "";
   background: transparent url("../../images/Picto_Burger_Menu.png") no-repeat center center;
   background-size: 2em 2em;
