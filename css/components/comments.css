@@ -45,6 +45,6 @@
   gap: 0.5rem; /* Espace entre le titre et le contenu */
 }
 
-.comments_section form .field--name-field-note label::after  {
+.comments_section form .field__label::after  {
   content: ":";
 }
