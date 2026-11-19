@@ -98,11 +98,6 @@
   </footer>
 
   <div{{ content_attributes.addClass('comment__content') }}>
-    {% if title %}
-      {{ title_prefix }}
-      <h4{{ title_attributes }}>{{ title }}</h4>
-      {{ title_suffix }}
-    {% endif %}
     {{ content }}
   </div>
 </article>
