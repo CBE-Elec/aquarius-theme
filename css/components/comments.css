@@ -6,6 +6,16 @@
 */
 
 .comments_section {
-
+    display: block;
+    overflow: hidden;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 2px #DDD;
+    padding: 0.116em 1.1600928074246%;
+    margin: 10px 0.011342819711552em;
+    flex-basis: auto;
+    flex-grow: 1;
+    -webkit-flex-basis: auto;
+    -webkit-flex-grow: 1;
 
 }
