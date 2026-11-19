@@ -43,6 +43,7 @@ global-styling:
       css/components/vertical-tabs.css: {}
       css/components/pager.css: {}
       css/components/messages.css: {}
+      css/components/comment.css: {}
     layout:
       css/layout.css: {}
     theme:
