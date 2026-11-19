@@ -31,5 +31,17 @@
     flex-grow: 1;
     -webkit-flex-basis: auto;
     -webkit-flex-grow: 1;
+}
 
+.comments_section .comment__author, .comments_section .comment__time {
+    float: right;
+    margin-right: 0.5em;
+    font-size: 0.875em;
+}
+
+
+.comments_section .field--label-inline {
+  display: flex;
+  align-items: baseline; /* Aligne le texte de l'étiquette avec la première ligne du contenu */
+  gap: 0.5rem; /* Espace entre le titre et le contenu */
 }

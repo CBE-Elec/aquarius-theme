@@ -84,8 +84,8 @@
 
   <footer class="comment__meta">
     {# {{ user_picture }} #}
-    <p class="comment__author">{{ author }}</p>
-    <p class="comment__time">{{ created }}</p>
+    <span class="comment__author">{{ author }} </span>
+    <span class="comment__time">le {{ created }}</span>
     {# <p class="comment__permalink">{{ permalink }}</p> #}
     {#
       Indicate the semantic relationship between parent and child comments
@@ -100,7 +100,7 @@
   <div{{ content_attributes.addClass('comment__content') }}>
     {% if title %}
       {{ title_prefix }}
-      <h4{{ title_attributes }}>{{ title }}</h4>
+      <h4{{ title_attributes }}>{{ title|without('links') }}</h4>
       {{ title_suffix }}
     {% endif %}
     {{ content }}
