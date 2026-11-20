@@ -46,5 +46,5 @@
 }
 
 .comments_section .field__label::after  {
-  content: ":";
+  content: " :";
 }
